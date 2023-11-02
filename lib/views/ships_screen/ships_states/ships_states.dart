@@ -1,4 +1,3 @@
-import 'package:equatable/equatable.dart';
 import 'package:sampleblocpatternwithsinglestate/data/models/ships/ships_data_model.dart';
 
 enum ShipStatus {

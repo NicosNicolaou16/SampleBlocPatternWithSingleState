@@ -4,7 +4,7 @@ import 'package:sampleblocpatternwithsinglestate/views/ship_details_screen/ship_
 import 'package:sampleblocpatternwithsinglestate/views/ship_details_screen/ship_details_states/ship_details_states.dart';
 
 class ShipDetailsBloc extends Bloc<ShipDetailsEvents, ShipDetailsStates> {
-  ShipDetailsBloc(ShipDetailsStates shipStates) : super(shipStates) {
+  ShipDetailsBloc() : super(ShipDetailsStates()) {
     on<ShipDetailsLocalQuery>(_onShipsLocalSearch);
   }
 
@@ -13,12 +13,15 @@ class ShipDetailsBloc extends Bloc<ShipDetailsEvents, ShipDetailsStates> {
     Emitter<ShipDetailsStates> emit,
   ) async {
     if (event.shipId != "-1") {
-      emit(ShipDetailsLoadedState(
+      emit(state.copyWith(
+          shipDetailsStatus: ShipDetailsStatus.loaded,
           shipDetailsDataModelList:
               await ShipDetailsDataModel.createShipDetailsDataModel(
                   event.shipId)));
     } else {
-      emit(const ShipDetailsErrorState());
+      emit(state.copyWith(
+        shipDetailsStatus: ShipDetailsStatus.error,
+      ));
     }
   }
 }

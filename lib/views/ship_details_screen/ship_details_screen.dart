@@ -36,10 +36,10 @@ class _ShipDetailsScreenState extends State<ShipDetailsScreen> {
           ),
         ),
         body: BlocProvider(
-          create: (_) => ShipDetailsBloc(ShipDetailsInitialState()),
+          create: (_) => ShipDetailsBloc(),
           child: BlocConsumer<ShipDetailsBloc, ShipDetailsStates>(
             listener: (context, state) {
-              if (state is ShipDetailsErrorState) {
+              if (state.shipDetailsStatus == ShipDetailsStatus.error) {
                 AlertsDialog.showAlertDialog(state.error ?? "", context);
               }
             },
@@ -53,19 +53,19 @@ class _ShipDetailsScreenState extends State<ShipDetailsScreen> {
   }
 
   Widget _states(ShipDetailsStates state, BuildContext context) {
-    if (state is ShipDetailsInitialState) {
+    if (state.shipDetailsStatus == ShipDetailsStatus.initial) {
       _init(context);
-    } else if (state is ShipDetailsLoadedState) {
+    } else if (state.shipDetailsStatus == ShipDetailsStatus.loaded) {
       return _mainView(state, context);
-    } else if (state is ShipDetailsLoadingState) {
+    } else if (state.shipDetailsStatus == ShipDetailsStatus.loading) {
       return const Center(
         child: CircularProgressIndicator(),
       );
     }
-    return Container();
+    return _mainView(state, context);
   }
 
-  Widget _mainView(ShipDetailsLoadedState state, BuildContext context) {
+  Widget _mainView(ShipDetailsStates state, BuildContext context) {
     return ListView.builder(
         itemCount: state.shipDetailsDataModelList.length,
         itemBuilder: (context, index) {
