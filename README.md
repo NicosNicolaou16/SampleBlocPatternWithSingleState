@@ -1,16 +1,22 @@
-# sampleblocpatternwithsinglestate
+# Sample Bloc Pattern With Single State
+This is a sample project that uses Bloc Architecture Pattern Single State with Dio Network Manager and Drift Database.
 
-A new Flutter project.
+# This Project contains:
+Bloc Architecture Pattern with Repository and Service <br />
+Dio (Network Manager) <br />
+Drift Database (SQL) <br />
 
-## Getting Started
+Flutter SDK version: 3.13.9 <br />
+Dart Version: 3.1.5 <br />
 
-This project is a starting point for a Flutter application.
+# References/Tutorials Follow
+https://bloclibrary.dev/#/flutterinfinitelisttutorial <br />
+https://bloclibrary.dev/#/gettingstarted <br />
+https://bloclibrary.dev/#/fluttertimertutorial?id=flutter-timer-tutorial <br />
+https://ppantaleon.medium.com/flutter-blocbuilder-vs-blocconsumer-vs-bloclistener-a4a3ce7bfa9a <br />
+https://stackoverflow.com/questions/59188021/why-usually-theres-a-repository-layer-on-bloc-pattern <br />
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Feeds/Urls/End Point (parsing some data from response)
+## (Links References for Ends Points)
+https://github.com/r-spacex/SpaceX-API (GitHub) <br />
+https://docs.spacexdata.com/?version=latest (Postman) <br />
