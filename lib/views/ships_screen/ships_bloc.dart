@@ -8,7 +8,7 @@ import 'package:sampleblocpatternwithsinglestate/views/ships_screen/ships_states
 class ShipsBloc extends Bloc<ShipsEvents, ShipsStates> {
   final ShipsRepository _shipsRepository = ShipsRepository();
 
-  ShipsBloc(ShipsStates shipsStates) : super(shipsStates) {
+  ShipsBloc() : super(ShipsStates()) {
     on<ShipsFetchData>(_onShipsFetched);
     on<ShipsFromLocalDatabase>(_shipsFromLocalDatabase);
     on<ShipsLocalSearch>(_onShipsLocalSearch);
@@ -18,15 +18,18 @@ class ShipsBloc extends Bloc<ShipsEvents, ShipsStates> {
     ShipsFetchData event,
     Emitter<ShipsStates> emit,
   ) async {
-    emit(ShipsLoadingState());
+    emit(state.copyWith(shipStatus: ShipStatus.loading));
     await _shipsRepository.requestAndSaveDataLocal().then((value) async {
       List<ShipsDataModel> shipsDataModelList =
           await ShipsDataModel.createShipsDataModel(value);
-      emit(ShipsLoadedState(shipsDataModelList: shipsDataModelList));
+      emit(state.copyWith(
+          shipStatus: ShipStatus.loaded,
+          shipsDataModelList: shipsDataModelList));
     }).catchError((err) async {
-      emit(const ShipsErrorState(
+      emit(state.copyWith(
         error: "Something went wrong",
         statusCode: -1,
+        shipStatus: ShipStatus.error,
       ));
     });
   }
@@ -35,11 +38,12 @@ class ShipsBloc extends Bloc<ShipsEvents, ShipsStates> {
     ShipsFromLocalDatabase event,
     Emitter<ShipsStates> emit,
   ) async {
-    emit(ShipsLoadingState());
+    emit(state.copyWith(shipStatus: ShipStatus.loading));
     List<ShipsEntity> shipsEntityList = await ShipsEntity.getAllShips();
     List<ShipsDataModel> shipsDataModelList =
         await ShipsDataModel.createShipsDataModel(shipsEntityList);
-    emit(ShipsLoadedState(shipsDataModelList: shipsDataModelList));
+    emit(state.copyWith(
+        shipStatus: ShipStatus.loaded, shipsDataModelList: shipsDataModelList));
   }
 
   Future<void> _onShipsLocalSearch(
@@ -50,6 +54,7 @@ class ShipsBloc extends Bloc<ShipsEvents, ShipsStates> {
         await ShipsEntity.getShipsByName(event.searchText ?? "");
     List<ShipsDataModel>? shipsDataModelList =
         await ShipsDataModel.createShipsDataModel(shipsEntityList);
-    emit(ShipsLoadedState(shipsDataModelList: shipsDataModelList));
+    emit(state.copyWith(
+        shipStatus: ShipStatus.loaded, shipsDataModelList: shipsDataModelList));
   }
 }
