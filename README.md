@@ -9,6 +9,9 @@ Drift Database (SQL) <br />
 Flutter SDK version: 3.13.9 <br />
 Dart Version: 3.1.5 <br />
 
+# Similar Project
+https://github.com/NicosNicolaou16/SampleDriftDatabaseWithBlocPattern <br />
+
 # References/Tutorials Follow
 https://bloclibrary.dev/#/flutterinfinitelisttutorial <br />
 https://bloclibrary.dev/#/gettingstarted <br />
