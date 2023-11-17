@@ -1,5 +1,5 @@
 import 'package:sampleblocpatternwithsinglestate/data/database/entities/ships_entity.dart';
-import 'package:sampleblocpatternwithsinglestate/data/remote/ships_service.dart';
+import 'package:sampleblocpatternwithsinglestate/domain/remote/ships_service.dart';
 
 class ShipsRepository {
   final ShipsService _shipsService = ShipsService();
