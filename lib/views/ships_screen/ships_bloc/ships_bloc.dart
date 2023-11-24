@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sampleblocpatternwithsinglestate/data/database/entities/ships_entity.dart';
 import 'package:sampleblocpatternwithsinglestate/data/models/ships/ships_data_model.dart';
-import 'package:sampleblocpatternwithsinglestate/domain/repositories/ships_repository.dart';
+import 'package:sampleblocpatternwithsinglestate/data/repositories/ships_repository.dart';
 import 'package:sampleblocpatternwithsinglestate/views/ships_screen/ships_bloc/ships_events.dart';
 import 'package:sampleblocpatternwithsinglestate/views/ships_screen/ships_bloc/ships_states.dart';
 
