@@ -19,7 +19,7 @@ https://bloclibrary.dev/#/fluttertimertutorial?id=flutter-timer-tutorial <br />
 https://ppantaleon.medium.com/flutter-blocbuilder-vs-blocconsumer-vs-bloclistener-a4a3ce7bfa9a <br />
 https://stackoverflow.com/questions/59188021/why-usually-theres-a-repository-layer-on-bloc-pattern <br />
 
-# Feeds/Urls/End Point (parsing some data from response)
+# Feeds/Urls/End Point (parsing some data from the response)
 ## (Links References for Ends Points)
 https://github.com/r-spacex/SpaceX-API (GitHub) <br />
 https://docs.spacexdata.com/?version=latest (Postman) <br />
