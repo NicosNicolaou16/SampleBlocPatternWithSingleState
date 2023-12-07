@@ -4,10 +4,12 @@ import 'package:sampleblocpatternwithsinglestate/domain/remote/ships_service.dar
 class ShipsRepository {
   final ShipsService _shipsService = ShipsService();
 
-  Future<List<ShipsEntity>> requestAndSaveDataLocal() async {
-    List<ShipsEntity>? shipsEntityList = await _shipsService.getShips();
-    await saveShipOnLocalDatabase(shipsEntityList);
-    return shipsEntityList;
+  Future<ShipsServiceResponse> requestAndSaveDataLocal() async {
+    ShipsServiceResponse? shipsServiceResponse = await _shipsService.getShips();
+    if (shipsServiceResponse.shipsEntityList != null) {
+      await saveShipOnLocalDatabase(shipsServiceResponse.shipsEntityList);
+    }
+    return shipsServiceResponse;
   }
 
   Future<void> saveShipOnLocalDatabase(
