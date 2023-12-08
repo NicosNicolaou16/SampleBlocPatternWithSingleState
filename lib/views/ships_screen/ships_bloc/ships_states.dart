@@ -15,6 +15,7 @@ final class ShipsStates {
 
   ShipsStates({
     this.error,
+    this.statusCode,
     this.shipsDataModelList = const [],
     this.shipStatus = ShipStatus.initial,
   });
@@ -27,6 +28,7 @@ final class ShipsStates {
   }) {
     return ShipsStates(
       error: error ?? this.error,
+      statusCode: statusCode ?? this.statusCode,
       shipsDataModelList: shipsDataModelList ?? this.shipsDataModelList,
       shipStatus: shipStatus ?? this.shipStatus,
     );
