@@ -21,10 +21,10 @@ final class ShipsStates {
   });
 
   ShipsStates copyWith({
-    error,
-    statusCode,
-    shipsDataModelList,
-    shipStatus,
+    String? error,
+    int? statusCode,
+    List<ShipsDataModel>? shipsDataModelList,
+    required ShipStatus shipStatus,
   }) {
     return ShipsStates(
       error: error ?? this.error,
