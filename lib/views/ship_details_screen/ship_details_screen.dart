@@ -55,14 +55,21 @@ class _ShipDetailsScreenState extends State<ShipDetailsScreen> {
   Widget _states(ShipDetailsStates state, BuildContext context) {
     if (state.shipDetailsStatus == ShipDetailsStatus.initial) {
       _init(context);
-    } else if (state.shipDetailsStatus == ShipDetailsStatus.loaded) {
-      return _mainView(state, context);
     } else if (state.shipDetailsStatus == ShipDetailsStatus.loading) {
-      return const Center(
-        child: CircularProgressIndicator(),
+      return Stack(
+        children: [
+          _mainView(state, context),
+          const Center(
+            child: CircularProgressIndicator(),
+          ),
+        ],
       );
     }
-    return _mainView(state, context);
+    return Stack(
+      children: [
+        _mainView(state, context),
+      ],
+    );
   }
 
   Widget _mainView(ShipDetailsStates state, BuildContext context) {
