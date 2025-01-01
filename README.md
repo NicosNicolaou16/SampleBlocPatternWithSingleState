@@ -13,6 +13,8 @@ retrieving data from the remote server. <br />
 [Drift Database](https://drift.simonbinder.eu/docs/getting-started/) is responsible for saving the
 retrieved data from the remote server, querying data from the local database, and supporting offline
 functionality. ([Drift Database Documentation](https://pub.dev/packages/drift)) <br />
+[Cached Network Image](https://pub.dev/packages/cached_network_image) is a package that it is
+responsible for loading the images and supports offline functionality.  <br />
 
 Flutter SDK version: 3.24.4 <br />
 Dart Version: 3.5.4 <br />
