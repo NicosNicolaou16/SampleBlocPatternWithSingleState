@@ -16,10 +16,6 @@ functionality. ([Drift Database Documentation](https://pub.dev/packages/drift)) 
 [Cached Network Image](https://pub.dev/packages/cached_network_image) is a package that it is
 responsible for loading the images and supports offline functionality.  <br />
 
-# Similar with this Project
-
-https://github.com/NicosNicolaou16/SampleDriftDatabaseWithBlocPattern <br />
-
 > [!IMPORTANT]  
 > Similar project with :point_right: [SampleDriftDatabaseWithBlocPattern](https://github.com/NicosNicolaou16/SampleDriftDatabaseWithBlocPattern) :point_left: <br />
 
