@@ -3,10 +3,11 @@
 This project is an application that utilizes the BLoC architecture pattern with a single state, Dio
 for network management, and Drift for local database storage.
 
-# This Project contains:
+# The Project Contain the following technologies and libraries
 
 Bloc Architecture Pattern with Repository and Service <br />
-Dio (Network Manager) <br />
+[Dio Network Manager](https://pub.dev/packages/dio) is responsible for making requests and
+retrieving data from the remote server. <br />
 Drift Database (SQL) <br />
 
 Flutter SDK version: 3.24.4 <br />
