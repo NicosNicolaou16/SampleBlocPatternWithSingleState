@@ -16,14 +16,23 @@ functionality. ([Drift Database Documentation](https://pub.dev/packages/drift)) 
 [Cached Network Image](https://pub.dev/packages/cached_network_image) is a package that it is
 responsible for loading the images and supports offline functionality.  <br />
 
-Flutter SDK version: 3.24.4 <br />
-Dart Version: 3.5.4 <br />
-
 # Similar with this Project
 
 https://github.com/NicosNicolaou16/SampleDriftDatabaseWithBlocPattern <br />
 
-# References/Tutorials Follow
+# Versioning
+
+Flutter SDK version: 3.24.4 <br />
+Dart Version: 3.5.4 <br />
+
+# Feeds/Urls/End Point (parsing some data from the response)
+
+## (Links References for Ends Points)
+
+https://github.com/r-spacex/SpaceX-API (GitHub) <br />
+https://docs.spacexdata.com/?version=latest (Postman) <br />
+
+# References
 
 https://bloclibrary.dev/#/flutterinfinitelisttutorial <br />
 https://bloclibrary.dev/#/gettingstarted <br />
@@ -33,10 +42,3 @@ https://stackoverflow.com/questions/59188021/why-usually-theres-a-repository-lay
 https://stackoverflow.com/questions/73811123/how-to-stop-dio-get-when-the-internet-is-off <br />
 https://stackoverflow.com/questions/61381265/stop-showing-error-from-http-or-dio-request <br />
 https://pub.dev/packages/dio#handling-errors <br />
-
-# Feeds/Urls/End Point (parsing some data from the response)
-
-## (Links References for Ends Points)
-
-https://github.com/r-spacex/SpaceX-API (GitHub) <br />
-https://docs.spacexdata.com/?version=latest (Postman) <br />
