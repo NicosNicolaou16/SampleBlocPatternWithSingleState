@@ -1,7 +1,7 @@
 # Sample Bloc Pattern With Single State
 
-This project is an application that uses Bloc Architecture Pattern Single State with Dio Network
-Manager and Drift Database.
+This project is an application that utilizes the BLoC architecture pattern with a single state, Dio
+for network management, and Drift for local database storage.
 
 # This Project contains:
 
