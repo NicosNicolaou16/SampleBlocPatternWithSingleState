@@ -20,6 +20,9 @@ responsible for loading the images and supports offline functionality.  <br />
 
 https://github.com/NicosNicolaou16/SampleDriftDatabaseWithBlocPattern <br />
 
+> [!IMPORTANT]  
+> Similar project with :point_right: [SampleDriftDatabaseWithBlocPattern](https://github.com/NicosNicolaou16/SampleDriftDatabaseWithBlocPattern) :point_left: <br />
+
 # Versioning
 
 Flutter SDK version: 3.24.4 <br />
