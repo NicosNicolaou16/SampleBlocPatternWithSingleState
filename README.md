@@ -10,7 +10,9 @@ and services, separates business logic, data access, and UI by using streams to 
 manage data flow. ([Bloc Pattern Documentation](https://bloclibrary.dev/getting-started/)) <br />
 [Dio Network Manager](https://pub.dev/packages/dio) is responsible for making requests and
 retrieving data from the remote server. <br />
-Drift Database (SQL) <br />
+[Drift Database](https://drift.simonbinder.eu/docs/getting-started/) is responsible for saving the
+retrieved data from the remote server, querying data from the local database, and supporting offline
+functionality. ([Drift Database Documentation](https://pub.dev/packages/drift)) <br />
 
 Flutter SDK version: 3.24.4 <br />
 Dart Version: 3.5.4 <br />
