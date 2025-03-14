@@ -1,0 +1,2 @@
+C:/Users/Nicos/Desktop/AndroidProjects/sampleblocpatternwithsinglestate/android/app/.cxx/RelWithDebInfo/5r4m3n72/x86/CMakeFiles/edit_cache.dir
+C:/Users/Nicos/Desktop/AndroidProjects/sampleblocpatternwithsinglestate/android/app/.cxx/RelWithDebInfo/5r4m3n72/x86/CMakeFiles/rebuild_cache.dir
