@@ -39,7 +39,7 @@ dependencies:
   flutter_bloc: ^9.1.1
   dio: ^5.8.0+1
   drift: ^2.26.1
-  sqlite3_flutter_libs: ^0.5.32
+  sqlite3_flutter_libs: ^0.5.34
   path_provider: ^2.1.5
   path: ^1.9.1
   cached_network_image: ^3.4.1
@@ -55,7 +55,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
