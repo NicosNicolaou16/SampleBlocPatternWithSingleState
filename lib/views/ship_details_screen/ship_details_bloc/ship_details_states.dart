@@ -31,7 +31,7 @@ class ShipDetailsStates {
       statusCode: statusCode ?? this.statusCode,
       shipDetailsDataModelList:
           shipDetailsDataModelList ?? this.shipDetailsDataModelList,
-      shipDetailsStatus: shipDetailsStatus ?? this.shipDetailsStatus,
+      shipDetailsStatus: shipDetailsStatus,
     );
   }
 }
