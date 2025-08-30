@@ -30,7 +30,7 @@ final class ShipsStates {
       error: error ?? this.error,
       statusCode: statusCode ?? this.statusCode,
       shipsDataModelList: shipsDataModelList ?? this.shipsDataModelList,
-      shipStatus: shipStatus ?? this.shipStatus,
+      shipStatus: shipStatus,
     );
   }
 }
