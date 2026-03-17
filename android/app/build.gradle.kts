@@ -27,6 +27,11 @@ android {
         getByName("main") {
             java.srcDirs("src/main/kotlin")
         }
+        sourceSets {
+            named("main") {
+                kotlin.setSrcDirs(listOf("src/main/kotlin"))
+            }
+        }
     }
 
     defaultConfig {
